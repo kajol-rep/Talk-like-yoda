@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talk-like-Yoda</title>
+
+    <style>
+        h1 {
+            color: yellow;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        body {
+            background-color: #F3F4F6;
+            background-image: url("https://wallpapercave.com/wp/e0QfVMd.jpg");
+        }
+
+        textarea {
+            display: block;
+            width: 25rem;
+            height: 5rem;
+            border: 2px solid black;
+            border-radius: 1rem;
+            margin-left: 5%;
+            margin-top: 10%;
+            padding: 1rem;
+
+        }
+
+        button {
+            
+            margin-top: 2%;
+            border: 1px transparent;
+        -webkit-border-radius: 40px;
+        border-radius: 40px;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        padding: 8px 30px;
+        text-align: center;
+        
+        margin-left: 15%;
+        -webkit-animation: glowing 1300ms infinite;
+        -moz-animation: glowing 1300ms infinite;
+        -o-animation: glowing 1300ms infinite;
+        animation: glowing 1300ms infinite;
+        }
+
+        @keyframes glowing {
+        0% {
+          background-color: #19d842;
+          -webkit-box-shadow: 0 0 3px #19d842;
+        }
+        50% {
+          background-color: #3bfc5b;
+          -webkit-box-shadow: 0 0 15px #3bfc5b;
+        }
+        100% {
+          background-color: #19d842;
+          -webkit-box-shadow: 0 0 3px #19d842;
+        }
+      }
+      
+
+        #output {
+            border: 2px solid black;
+            width: 25rem;
+            height: 5rem;
+            padding: 1rem;
+            display: block;
+            border-radius: 1rem;
+            color: black;
+            margin-left: 5%;
+            margin-top: 2%;
+            background-color: white;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .box-area {
+            position: absolute;
+        }
+
+        #img-one {
+            width: 35rem;
+            height: 20rem;
+            margin-top: 12rem;
+            float: left;
+
+        }
+
+        div {
+            display: inline;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Speak Yodish</h1>
+
+    <textarea id="user-input"
+        placeholder="Enter you text here in english and lets see how a yoda will speak"></textarea>
+
+    <button id="btn-translation">Translate</button>
+
+    <div id="output"></div>
+
+    <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>
